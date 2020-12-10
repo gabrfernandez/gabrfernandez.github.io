@@ -1,25 +1,27 @@
 import React from 'react'
-import Gabe from '../img/gabe.png'
+import Gabe from '../img/gabe.png' 
+import {Bio, Description, Image, Hide} from "../styles"
+import styled from "styled-components"
 
 const BioSection = () => {
     return (
-        <div>
-            <div className="description">
+        <Bio>
+            <Description>
                 <div className="title">
-                    <div className="hide">
+                    <Hide>
                         <h2>Gabriel Fernandez</h2>
-                    </div>
-                    <div className="hide">
+                    </Hide>
+                    <Hide>
                         <h2><span>Full Stack</span> Developer</h2>
-                    </div>
+                    </Hide>
                 </div>
                 <p>Open to work. This is my portfolio</p>
                 <button>Contact Me</button>
-            </div>
+            </Description>
             <div className="image">
                 <img src={Gabe} alt="me" />
             </div>
-        </div>
+        </Bio>
     )
 }
 
