@@ -6,10 +6,19 @@ import oracle from "../img/oracle.png"
 import code from "../img/code.jpg"
 import {Bio, Description, Image} from "../styles"
 import styled from "styled-components"
+import {scrollReveal} from "../animation"
+import {useScroll} from "./useScroll"
+
 
 const BackgroundSection = () => {
+  const [element, controls]=useScroll()
     return (
-        <Background>
+        <Background 
+          variants={scrollReveal}
+          animate={controls}
+          initial="hidden"
+          ref={element}
+        >
             <Description>
                 <h2>Background</h2>
             </Description>
