@@ -2,25 +2,29 @@ import React from 'react'
 import Gabe from '../img/gabe.png' 
 import {Bio, Description, Image, Hide} from "../styles"
 import styled from "styled-components"
+import {motion} from "framer-motion"
+import { fade, titleAnim, photoAnim } from '../animation'
+import Wave from "./Wave"
 
 const BioSection = () => {
     return (
         <Bio>
             <Description>
-                <div className="title">
+                <motion.div>
                     <Hide>
-                        <h2>Gabriel Fernandez</h2>
+                        <motion.h2 variants={titleAnim}>Gabriel Fernandez</motion.h2>
                     </Hide>
                     <Hide>
-                        <h2><span>Full Stack</span> Developer</h2>
+                        <motion.h2 variants={titleAnim}><span>Full Stack</span> Developer</motion.h2>
                     </Hide>
-                </div>
-                <p>Open to work. This is my portfolio</p>
-                <button>Contact Me</button>
+                </motion.div>
+                <motion.p variants={fade}>Open to work. This is my portfolio</motion.p>
+                <motion.button variants={fade}>Contact Me</motion.button>
             </Description>
-            <div className="image">
-                <img src={Gabe} alt="me" />
-            </div>
+            <Image>
+                <motion.img variants={photoAnim} src={Gabe} alt="me" />
+            </Image>
+            <Wave />
         </Bio>
     )
 }
