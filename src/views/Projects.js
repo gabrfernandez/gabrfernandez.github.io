@@ -7,6 +7,7 @@ import blogger from "../img/blogger.png"
 import {motion} from "framer-motion"
 import {lineAnim, pageAnimation, slider, sliderContainer, fade, swoopAdoop} from "../animation"
 import {useScroll} from "../components/useScroll"
+import ScrollTop from '../components/ScrollTop'
 
 
 const Projects = () => {
@@ -43,6 +44,7 @@ const Projects = () => {
                     <img src={moviedb} alt="moviedb" />
                 </Link>
             </Project>
+            <ScrollTop />
         </Work>
     )
 }

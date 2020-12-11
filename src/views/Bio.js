@@ -4,6 +4,7 @@ import BackgroundSection from '../components/BackgroundSection'
 import BackgroundExpand from '../components/BackgroundExpand'
 import {motion} from "framer-motion"
 import { pageAnimation } from '../animation'
+import ScrollTop from '../components/ScrollTop'
 
 
 
@@ -15,6 +16,7 @@ const Bio = () => {
             <BioSection />
             <BackgroundSection />
             <BackgroundExpand />
+            <ScrollTop />
         </motion.div>
         
     )

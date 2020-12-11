@@ -15,7 +15,7 @@ const BackgroundExpand = () => {
           animate={controls}
           initial="hidden"
         >
-            <h2>Schooling<span>& Experience</span></h2>
+            <h2>Education<span>& Experience</span></h2>
             <AnimateSharedLayout>
               <Toggle title="University & Coding Bootcamp">
               <div className="subtext">
