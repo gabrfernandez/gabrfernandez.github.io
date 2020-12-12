@@ -1,7 +1,6 @@
 import React from 'react'
 import Gabe from '../img/gabe.png' 
 import {Bio, Description, Image, Hide} from "../styles"
-import styled from "styled-components"
 import {motion} from "framer-motion"
 import { fade, titleAnim, photoAnim } from '../animation'
 import Wave from "./Wave"
@@ -19,7 +18,8 @@ const BioSection = () => {
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>Open to work. This is my portfolio</motion.p>
-                <motion.button variants={fade}>Contact Me</motion.button>
+                <motion.button variants={fade}><a href="/projects">My Projects</a></motion.button>
+                <motion.button variants={fade}> <a href="/contact">Contact Me</a></motion.button>
             </Description>
             <Image>
                 <motion.img variants={photoAnim} src={Gabe} alt="me" />
@@ -29,4 +29,4 @@ const BioSection = () => {
     )
 }
 
-export default BioSection
+export default BioSection;

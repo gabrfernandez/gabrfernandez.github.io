@@ -6,6 +6,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box
 }
+html{
+    @media (max-width: 1700px){
+        font-size: 75%;
+    }
+   
 body{
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
@@ -16,11 +21,16 @@ button{
     font-size: 1.1.rem;
     cursor: pointer;
     padding: 1rem 2rem;
+    margin: 0rem 1rem;
     border: 3px solid #23d997;
     background: transparent;
     color: white;
     transition: all 0.5s ease;
     font-family: 'Inter', serif;
+    a{
+        text-decoration:none;
+        color:white;
+    }
     &:hover{
         background-color: #23d997;
         color: white;

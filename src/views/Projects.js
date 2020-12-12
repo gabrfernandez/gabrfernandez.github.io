@@ -5,7 +5,7 @@ import myshop from "../img/myshop.png"
 import moviedb from "../img/moviedb.png"
 import blogger from "../img/blogger.png"
 import {motion} from "framer-motion"
-import {lineAnim, pageAnimation, slider, sliderContainer, fade, swoopAdoop} from "../animation"
+import {lineAnim, pageAnimation, slider, sliderContainer, fade} from "../animation"
 import {useScroll} from "../components/useScroll"
 import ScrollTop from '../components/ScrollTop'
 
@@ -21,7 +21,7 @@ const Projects = () => {
               <Frame3 variants={slider}></Frame3>
               <Frame4 variants={slider}></Frame4>
             </motion.div>
-            <Project ref={element} variants={fade} animate={controls} initial="hidden">
+            <Project>
                 <motion.h2 variants={fade}>Blogger</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to ="/projects/blogger">
@@ -30,16 +30,16 @@ const Projects = () => {
                     </Hide>
                 </Link>
             </Project>
-            <Project ref={element2} variants={fade} animate={controls2} initial="hidden" >
+            <Project ref={element} variants={fade} animate={controls} initial="hidden" >
                 <h2>MyShop</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="projects/myshop">
                     <img src={myshop} alt="myshop" />
                 </Link>
             </Project>
-            <Project>
+            <Project ref={element2} variants={fade} animate={controls2} initial="hidden">
                 <h2>MovieDB API</h2>
-                <div className="line"></div>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/projects/moviedb">
                     <img src={moviedb} alt="moviedb" />
                 </Link>
@@ -53,6 +53,9 @@ const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+  }
   h2 {
     padding: 1rem 0rem;
   }
@@ -81,17 +84,17 @@ const Frame1 = styled(motion.div)`
   top: 10%;
   width: 100%;
   height: 100vh;
-  background: #fffebf;
+  background: #A71930;
   z-index: 2;
 `;
 const Frame2 = styled(Frame1)`
-  background: #ff8efb;
+  background: #191C16;
 `;
 const Frame3 = styled(Frame1)`
-  background: #8ed2ff;
+  background: #DFDFDD;
 `;
 const Frame4 = styled(Frame1)`
-  background: #8effa0;
+  background: #0F2265;
 `;
 
 export default Projects
