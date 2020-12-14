@@ -6,6 +6,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
+
 const Contact = () => {
     return (
         <ContactStyle exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{background:"#fff"}}>

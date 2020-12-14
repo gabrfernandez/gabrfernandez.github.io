@@ -4,6 +4,8 @@ import {useHistory} from "react-router-dom"
 import {projectState } from "./projectState"
 import {motion} from "framer-motion"
 import {pageAnimation} from "../animation"
+import GitHubIcon from '@material-ui/icons/GitHub';
+import PublicIcon from '@material-ui/icons/Public';
 
 const ProjectDetail = () => {
     const history = useHistory();
@@ -31,6 +33,8 @@ const ProjectDetail = () => {
                                 key={detail.title}
                             />
                         ))}
+                        <a href={project.github} target="_blank"><GitHubIcon fontSize='large' /></a>
+                        <a href={project.deployed} target="_blank"><PublicIcon fontSize='large' /></a>
                     </Details>
                     <ImageDisplay>
                         <img src={project.secondaryImg} alt="project" />
