@@ -64,7 +64,7 @@ const Project = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
-    background: #23d997;
+    background: #156D75;
     margin-bottom: 3rem;
   }
   img {
@@ -84,17 +84,17 @@ const Frame1 = styled(motion.div)`
   top: 10%;
   width: 100%;
   height: 100vh;
-  background: #A71930;
+  background: #156D75;
   z-index: 2;
 `;
 const Frame2 = styled(Frame1)`
-  background: #191C16;
+  background: #FFFFFF;
 `;
 const Frame3 = styled(Frame1)`
-  background: #DFDFDD;
+  background: #EA7200;
 `;
 const Frame4 = styled(Frame1)`
-  background: #0F2265;
+  background: #000000;
 `;
 
 export default Projects

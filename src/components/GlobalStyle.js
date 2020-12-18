@@ -22,7 +22,7 @@ button{
     cursor: pointer;
     padding: 1rem 2rem;
     margin: 0rem 1rem;
-    border: 3px solid #23d997;
+    border: 3px solid #156D75;
     background: transparent;
     color: white;
     transition: all 0.5s ease;
@@ -32,7 +32,7 @@ button{
         color:white;
     }
     &:hover{
-        background-color: #23d997;
+        background-color: #156D75;
         color: white;
     }
 }
@@ -52,7 +52,7 @@ button{
     }
     span{
         font-weight: bold;
-        color:#23d997;
+        color:#156D75;
     }
     p{
         padding: 3rem 0rem;

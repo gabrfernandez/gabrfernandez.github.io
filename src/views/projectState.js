@@ -1,32 +1,33 @@
 import blogger from "../img/blogger.png"
-import blogger2 from "../img/blogger2.png"
+import bloggerGif from "../img/bloggerGif.gif"
 import myshop from "../img/myshop.png"
-import myshop2 from "../img/myshop2.png"
+import myshopGif from "../img/myshopGif.gif"
 import moviedb from "../img/moviedb.png"
-import moviedb2 from "../img/moviedb2.png"
+import moviedbGif from "../img/moviedbGif.gif"
+
 
 export const projectState = () => {
     return [
         {
             title:"Blogger",
             mainImg: blogger,
-            secondaryImg: blogger2,
+            secondaryImg: bloggerGif,
             url: "/projects/blogger",
             github:"https://github.com/gabrfernandez/blogger_django",
             deployed:"http://3.19.241.54/",
             details:[
                 {
-                    title:"Django",
+                    title:"OVERVIEW",
                     description:
-                    "Built with Django. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    "This is a blog app where users can post and view blog posts about certain categories. Users have full CRUD functionality on their posts. Implemented user login/registration. Users can also interact with each other by leaving comments on specific posts. The app displays feature posts/categories. App also includes admin functionality. "
                 },
                 {
-                    title:"Server",
+                    title:"TECHNOLOGIES",
                     description:
-                    "Built with MySQL. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    "Built with Django, MySQL, Bootstrap, Crispy Forms, Pillow, FontAwesome, & Recaptcha."
                 },
                 {
-                    title:"AWS ES2",
+                    title:"DEPLOYMENT",
                     description:
                     "This application is deployed on AWS ES2. Click on the deployed link to see application or on the GitHub link to see code."
                 },
@@ -36,23 +37,23 @@ export const projectState = () => {
         {
             title:"MyShop",
             mainImg: myshop,
-            secondaryImg: myshop2,
+            secondaryImg: myshopGif,
             url: "/projects/myshop",
             github:"https://github.com/gabrfernandez/myshop",
-            deployed:"tba",
+            deployed:"https://myshopgabe.herokuapp.com/",
             details:[
                 {
-                    title:"MERN",
+                    title:"OVERVIEW",
                     description:
-                    "An eCommerce project built with MERN STACK. Customers can purchase items and checkout with PayPal or with Credit/Debt Card. Customers can leave a review on a product. Admin can upload/edit products and manage orders."
+                    "This is a full functional eCommerce app built using the MERN STACK. Customers can purchase items and checkout with PayPal or with Credit/Debt Card. Customers can leave a review on a product. Admin can upload/edit products and manage orders."
                 },
                 {
-                    title:"REDUX",
+                    title:"TECHNOLOGIES",
                     description:
-                    "This project is built with Redux, a popular application state management library."
+                    "Built with: React, Redux, MongoDB Atlas, Mongoose, Express, Node, Bcrypt, JSONWebToken, Bootstrap, & PayPal. "
                 },
                 {
-                    title:"Heroku",
+                    title:"DEPLOYMENT",
                     description:
                     "This application is deployed on Heroku. Click on the deployed link to see application or on the GitHub link to see code."
                 },
@@ -62,23 +63,23 @@ export const projectState = () => {
         {
             title:"MovieDB API",
             mainImg: moviedb,
-            secondaryImg: moviedb2,
+            secondaryImg: moviedbGif,
             url: "/projects/moviedb",
             github:"https://github.com/gabrfernandez/moviedb_api",
             deployed:"https://moviedb-8ae2d.web.app/",
             details:[
                 {
-                    title:"React",
+                    title:"OVERVIEW",
                     description:
-                    "Built with React. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    "Users can search movies by utilizing MovieDB API. The detail page displays key details about the movie, including poster backdrops and a trailer. The Home page loads popular, upcoming, and new movies."
                 },
                 {
-                    title:"MovieDB",
+                    title:"TECHNOLOGIES",
                     description:
-                    "Built with MovieDB API. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    "Built with React, Redux, Axios, Framer Motion, Styled Components, & MovieDB API. "
                 },
                 {
-                    title:"Firebase",
+                    title:"DEPLOYMENT",
                     description:
                     "This application is deployed on Firebase. Click on the deployed link to see application or on the GitHub link to see code."
                 },

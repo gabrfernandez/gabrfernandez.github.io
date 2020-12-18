@@ -27,7 +27,7 @@ const BackgroundSection = () => {
                           <img src={ucdavis} alt="pic" />
                           <h3>UC Davis</h3>
                       </div>
-                      <p>Undergrad</p>
+                      <p>Undergraduate</p>
                   </Card>
                   <Card>
                       <div className="pic">

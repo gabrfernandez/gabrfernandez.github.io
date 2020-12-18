@@ -16,6 +16,7 @@ const ProjectDetail = () => {
     useEffect(()=>{
         const currentProject=projects.filter((stateProject)=>stateProject.url===url);
         setProject(currentProject[0]);
+        console.log(setProjects)
     },[projects,url])
     return (
         <div>
@@ -23,7 +24,7 @@ const ProjectDetail = () => {
                 <Detail exit="exit" variants={pageAnimation} initial="hidden" animate="show">
                     <HeadLine>
                         <h2>{project.title}</h2>
-                        <img src={project.mainImg} alt="project" />
+                        <img src={project.secondaryImg} alt="project" />
                     </HeadLine>
                     <Details>
                         {project.details.map((detail)=>(
@@ -33,11 +34,13 @@ const ProjectDetail = () => {
                                 key={detail.title}
                             />
                         ))}
-                        <a href={project.github} target="_blank"><GitHubIcon fontSize='large' /></a>
-                        <a href={project.deployed} target="_blank"><PublicIcon fontSize='large' /></a>
+                        <Links 
+                          github={project.github}
+                          deployed={project.deployed}
+                        />
                     </Details>
                     <ImageDisplay>
-                        <img src={project.secondaryImg} alt="project" />
+                        <img src={project.mainImg} alt="project" />
                     </ImageDisplay>
                 </Detail>
             )}
@@ -60,13 +63,13 @@ const HeadLine = styled.div`
   }
   img {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     object-fit: cover;
   }
 `;
 const Details = styled.div`
-  min-height: 80vh;
-  display: flex;
+  min-height: 60vh;
+  display: block;
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
@@ -76,20 +79,31 @@ const Details = styled.div`
   }
 `;
 const DetailStyle = styled.div`
-  padding: 5rem;
+  padding: 2rem;
   h3 {
     font-size: 2rem;
   }
   .line {
     width: 100%;
-    background: #23d997;
+    background: #156D75;
     height: 0.5rem;
     margin: 1rem 0rem;
   }
   p {
     padding: 2rem 0rem;
   }
+  a{
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+    padding:0rem 2rem 0rem 0rem;
+    &:hover{
+      background-color: #156D75;
+      color: black;
+  }
+  
 `;
+
 const ImageDisplay = styled.div`
   min-height: 50vh;
   img {
@@ -98,6 +112,7 @@ const ImageDisplay = styled.div`
     object-fit: cover;
   }
 `;
+
 
 //Detail Component
 const Single = ({ title, description }) => {
@@ -108,6 +123,15 @@ const Single = ({ title, description }) => {
       <p>{description}</p>
     </DetailStyle>
   );
+};
+
+const Links = ({github, deployed})=>{
+  return (
+    <DetailStyle>
+        <a href={github} target="_blank" rel="noreferrer" ><GitHubIcon fontSize='large' />GitHub Repo</a>
+        <a href={deployed} target="_blank" rel="noreferrer" ><PublicIcon fontSize='large' />Deployed Link</a>
+    </DetailStyle>
+  )
 };
 
 export default ProjectDetail

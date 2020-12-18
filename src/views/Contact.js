@@ -27,14 +27,14 @@ const Contact = () => {
                     <Social variants={titleAnim}>
                         <Circle />
                         <h2>Connect on LinkedIn</h2>
-                        <a href="https://www.linkedin.com/in/gabriel-antonio-fernandez/" target="_blank"><LinkedInIcon fontSize='large' />gabriel-antonio-fernandez</a>
+                        <a href="https://www.linkedin.com/in/gabriel-antonio-fernandez/" rel="noreferrer" target="_blank" ><LinkedInIcon fontSize='large' />gabriel-antonio-fernandez</a>
                     </Social>
                 </Hide>
                 <Hide>
                     <Social variants={titleAnim}>
                         <Circle />
                         <h2>View my GitHub</h2>
-                        <a href="https://github.com/gabrfernandez" target="_blank"><GitHubIcon fontSize='large' />gabrfernandez</a>
+                        <a href="https://github.com/gabrfernandez" rel="noreferrer" target="_blank" ><GitHubIcon fontSize='large' />gabrfernandez</a>
                     </Social>
                 </Hide>
             </div>

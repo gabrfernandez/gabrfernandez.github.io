@@ -5,7 +5,7 @@ const Nav = () => {
     return (
         <StyledNav>
             <h1>
-                <a id="logo" href="/">Gabriel Fernandez</a>
+                <a id="logo" href="/">Gabriel Fernandez Developer</a>
             </h1>
             <ul>
                 <li>
@@ -42,7 +42,7 @@ const StyledNav = styled.nav`
   }
   #logo {
     font-size: 1.5rem;
-    font-family: "Lobster", cursive;
+    font-family: "Oswald", cursive;
     font-weight: lighter;
   }
   li {
