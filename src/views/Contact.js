@@ -5,6 +5,8 @@ import styled from "styled-components"
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import pdf from "../img/GabrielFernandezResume.pdf"
 
 
 const Contact = () => {
@@ -35,6 +37,13 @@ const Contact = () => {
                         <Circle />
                         <h2>View my GitHub</h2>
                         <a href="https://github.com/gabrfernandez" rel="noreferrer" target="_blank" ><GitHubIcon fontSize='large' />gabrfernandez</a>
+                    </Social>
+                </Hide>
+                <Hide>
+                    <Social variants={titleAnim}>
+                        <Circle />
+                        <h2>View my Resume</h2>
+                        <a href={pdf} rel="noreferrer" target="_blank" ><AssignmentIcon fontSize='large' />resume</a>
                     </Social>
                 </Hide>
             </div>

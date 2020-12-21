@@ -29,7 +29,7 @@ export const projectState = () => {
                 {
                     title:"DEPLOYMENT",
                     description:
-                    "This application is deployed on AWS ES2. Click on the deployed link to see application or on the GitHub link to see code."
+                    "This application is deployed on AWS EC2. Click on the deployed link to see application or on the GitHub link to see code."
                 },
             ],
         },
