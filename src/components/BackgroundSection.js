@@ -86,10 +86,11 @@ const Card = styled.div`
       height:auto;
     }
     h3 {
-      margin-left: 1rem;
+      margin: 1rem;
       background: white;
       color: black;
       padding: 1rem;
+      width:60%;
     }
   }
 `;

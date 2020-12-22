@@ -62,6 +62,7 @@ const BG = styled(Bio)`
     width: 100%;
   }
   .title {
+    font-size:1.75rem;
     padding: 3rem 0rem;
     cursor: pointer;
     &:hover{

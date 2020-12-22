@@ -41,7 +41,7 @@ const StyledNav = styled.nav`
     list-style: none;
   }
   #logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Oswald", cursive;
     font-weight: lighter;
   }
