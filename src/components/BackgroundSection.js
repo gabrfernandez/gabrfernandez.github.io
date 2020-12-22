@@ -27,28 +27,28 @@ const BackgroundSection = () => {
                           <img src={ucdavis} alt="pic" />
                           <h3>UC Davis</h3>
                       </div>
-                      <p>Undergraduate</p>
+                      
                   </Card>
                   <Card>
                       <div className="pic">
                           <img src={codingdojo} alt="pic" />
                           <h3>Coding Dojo</h3>
                       </div>
-                      <p>Coding Bootcamp</p>
+                      
                   </Card>
                   <Card>
                       <div className="pic">
                           <img src={apple} alt="pic" />
                           <h3>Apple </h3>
                       </div>
-                      <p>GIS Researcher</p>
+                      
                   </Card>
                   <Card>
                       <div className="pic">
                           <img src={oracle} alt="pic" />
                           <h3>Oracle</h3>
                       </div>
-                      <p>Tax Operations Intern</p>
+                      
                   </Card>
               </Cards>
             </Description>
@@ -77,6 +77,7 @@ const Cards = styled.div`
 `;
 const Card = styled.div`
   flex-basis: 20rem;
+  margin: 1rem 0rem;
   .pic {
     display: flex;
     align-items: center;

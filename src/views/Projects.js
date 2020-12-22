@@ -22,25 +22,25 @@ const Projects = () => {
               <Frame4 variants={slider}></Frame4>
             </motion.div>
             <Project>
-                <motion.h2 variants={fade}>Blogger</motion.h2>
-                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to ="/projects/blogger">
                     <Hide>
+                      <motion.h2 variants={fade}>Blogger</motion.h2>
+                      <motion.div variants={lineAnim} className="line"></motion.div>
                       <motion.img src={blogger} alt="blogger" />
                     </Hide>
                 </Link>
             </Project>
             <Project ref={element} variants={fade} animate={controls} initial="hidden" >
-                <h2>MyShop</h2>
-                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="projects/myshop">
+                    <h2>MyShop</h2>
+                    <motion.div variants={lineAnim} className="line"></motion.div>
                     <img src={myshop} alt="myshop" />
                 </Link>
             </Project>
             <Project ref={element2} variants={fade} animate={controls2} initial="hidden">
-                <h2>MovieDB API</h2>
-                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/projects/moviedb">
+                    <h2>MovieDB API</h2>
+                    <motion.div variants={lineAnim} className="line"></motion.div>
                     <img src={moviedb} alt="moviedb" />
                 </Link>
             </Project>
@@ -68,9 +68,16 @@ const Project = styled(motion.div)`
     margin-bottom: 3rem;
   }
   img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+  }
+  a{
+    text-decoration:none;
+    color:#156D75;
+  }
+  a:hover{
+    color:#EA7200;
   }
 `;
 

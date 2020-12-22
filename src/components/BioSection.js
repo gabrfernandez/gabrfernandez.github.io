@@ -17,7 +17,7 @@ const BioSection = () => {
                         <motion.h2 variants={titleAnim}><span>Full Stack</span> Developer</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fade}>Welcome to my portfolio. I am currently open to work & based in <span>San Jose, CA</span>.</motion.p>
+                {/* <motion.p variants={fade}>Welcome to my portfolio. I am currently open to work & based in <span>San Jose, CA</span>.</motion.p> */}
                 <motion.button variants={fade}><a href="/projects">My Projects</a></motion.button>
                 <motion.button variants={fade}> <a href="/contact">Contact Me</a></motion.button>
             </Description>

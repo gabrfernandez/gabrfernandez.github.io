@@ -39,9 +39,6 @@ const ProjectDetail = () => {
                           deployed={project.deployed}
                         />
                     </Details>
-                    <ImageDisplay>
-                        <img src={project.mainImg} alt="project" />
-                    </ImageDisplay>
                 </Detail>
             )}
         </div>
@@ -62,8 +59,10 @@ const HeadLine = styled.div`
     transform: translate(-50%, -10%);
   }
   img {
-    width: 100%;
-    height: 80vh;
+    margin:auto;
+    display:block;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
   }
 `;
@@ -79,7 +78,7 @@ const Details = styled.div`
   }
 `;
 const DetailStyle = styled.div`
-  padding: 2rem;
+  padding: 1rem;
   h3 {
     font-size: 2rem;
   }
@@ -90,7 +89,7 @@ const DetailStyle = styled.div`
     margin: 1rem 0rem;
   }
   p {
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
   }
   a{
     display:inline-block;
@@ -103,16 +102,6 @@ const DetailStyle = styled.div`
   }
   
 `;
-
-const ImageDisplay = styled.div`
-  min-height: 50vh;
-  img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  }
-`;
-
 
 //Detail Component
 const Single = ({ title, description }) => {
@@ -128,8 +117,8 @@ const Single = ({ title, description }) => {
 const Links = ({github, deployed})=>{
   return (
     <DetailStyle>
-        <a href={github} target="_blank" rel="noreferrer" ><GitHubIcon fontSize='large' />GitHub Repo</a>
-        <a href={deployed} target="_blank" rel="noreferrer" ><PublicIcon fontSize='large' />Deployed Link</a>
+        <a href={github} target="_blank" rel="noreferrer" ><GitHubIcon fontSize='large' />Repo</a>
+        <a href={deployed} target="_blank" rel="noreferrer" ><PublicIcon fontSize='large' />Website</a>
     </DetailStyle>
   )
 };

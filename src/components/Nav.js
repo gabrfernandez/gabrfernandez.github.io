@@ -5,17 +5,17 @@ const Nav = () => {
     return (
         <StyledNav>
             <h1>
-                <a id="logo" href="/">Gabriel Fernandez Developer</a>
+                <a id="logo" href="/">Gabriel Fernandez</a>
             </h1>
             <ul>
                 <li>
-                    <a href="/">1. Bio</a>
+                    <a href="/">Bio</a>
                 </li>
                 <li>
-                    <a href="/projects">2. My Projects</a>
+                    <a href="/projects">My Projects</a>
                 </li>
                 <li>
-                    <a href="/contact">3. Contact Me</a>
+                    <a href="/contact">Contact Me</a>
                 </li>
             </ul>
         </StyledNav>
