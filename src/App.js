@@ -8,7 +8,6 @@ import Projects from './views/Projects'
 import ProjectDetail from "./views/ProjectDetail";
 import { AnimatePresence } from 'framer-motion';
 
-
 function App() {
   const location= useLocation();
   
