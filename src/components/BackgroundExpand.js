@@ -67,6 +67,7 @@ const BG = styled(Bio)`
     cursor: pointer;
     &:hover{
       color: #156D75;
+      font-size:200%;
   }
   }
   .subtext {

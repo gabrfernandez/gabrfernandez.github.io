@@ -76,8 +76,9 @@ const Project = styled(motion.div)`
     text-decoration:none;
     color:#156D75;
   }
-  a:hover{
+  h2:hover{
     color:#EA7200;
+    font-size:400%;
   }
 `;
 
