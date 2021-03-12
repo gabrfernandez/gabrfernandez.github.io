@@ -42,7 +42,7 @@ const StyledNav = styled.nav`
   }
   #logo {
     font-size: 2rem;
-    font-family: "Oswald", cursive;
+    font-family: "Oswald", sans-serif;
     font-weight: lighter;
   }
   li {
