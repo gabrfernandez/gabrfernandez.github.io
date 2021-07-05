@@ -1,5 +1,5 @@
 import React from 'react'
-import Gabe from '../img/gabe.png' 
+import Gabe from '../img/gabe.jpg' 
 import {Bio, Description, Image, Hide} from "../styles"
 import {motion} from "framer-motion"
 import { fade, titleAnim, photoAnim } from '../animation'
