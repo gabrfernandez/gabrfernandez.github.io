@@ -14,7 +14,7 @@ const Projects = () => {
   const [element, controls]= useScroll();
   const [element2, controls2]=useScroll();
     return (
-        <Work style={{background:"#fff"}} exit="exit" variants={pageAnimation} initial="hidden" animate="show">
+        <Work style={{background:"#D3D3D3"}} exit="exit" variants={pageAnimation} initial="hidden" animate="show">
             <motion.div variants={sliderContainer}>
               <Frame1 variants={slider}></Frame1>
               <Frame2 variants={slider}></Frame2>

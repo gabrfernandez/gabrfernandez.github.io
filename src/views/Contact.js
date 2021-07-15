@@ -11,7 +11,7 @@ import pdf from "../img/GabrielFernandezResume.pdf"
 
 const Contact = () => {
     return (
-        <ContactStyle exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{background:"#fff"}}>
+        <ContactStyle exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{background:"#D3D3D3"}}>
             <Title>
                 <Hide>
                     <motion.h2 variants={titleAnim}>Get in Touch</motion.h2>
