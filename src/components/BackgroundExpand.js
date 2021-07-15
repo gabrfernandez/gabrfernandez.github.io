@@ -17,7 +17,7 @@ const BackgroundExpand = () => {
         >
             <h2>Education<span>& Experience</span></h2>
             <AnimateSharedLayout>
-              <Toggle title="University & Coding Bootcamp">
+              <Toggle title="View University & Coding Bootcamp Education">
               <div className="subtext">
                   <p>UC Davis & Coding Dojo</p>
                   <p>I am a recent graduate of Coding Dojo, a coding bootcamp. I learned three full stacks: Python, MERN, & Java, including Web fundamentals.
@@ -29,7 +29,7 @@ const BackgroundExpand = () => {
               </div>
               </Toggle>
 
-            <Toggle title="Work Experience">
+            <Toggle title="View Work Experience">
             <div className="subtext">
                 <p>Apple & Oracle</p>
                 <p>I was recently a GIS Researcher for Apple as a contractor. In this role, I began analyzing aerial imagery to highlight changes to the mapped network. Due to my success, I took more of a QA role, checking other researchers' work. In this role, I developed my cross-functional skills as I communicated information among multiple teams. 
