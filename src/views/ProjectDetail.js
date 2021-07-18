@@ -49,7 +49,6 @@ const Detail = styled(motion.div)`
   color: white;
 `;
 const HeadLine = styled.div`
-  min-height: 90vh;
   padding-top: 20vh;
   position: relative;
   h2 {
